@@ -2,7 +2,7 @@
   
 This is my 12 key macro pad made for Hackpad.
 
-<img width="749" alt="SCR-20250628-qzaj" src="https://github.com/user-attachments/assets/909a379f-6798-423a-abdf-8da76a9584c5" />
+<img width="767" alt="SCR-20250628-qzec" src="https://github.com/user-attachments/assets/edb7d53a-49e9-4d0c-86b5-861a0ae9ed06" />
 
   
 ## Features  
