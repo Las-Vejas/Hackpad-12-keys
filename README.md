@@ -16,7 +16,7 @@ I made it with RMK and I hope it'll work.
 ## PCB
 I made the PCB in KiCad and had to reroute it like 10 times.
 
-<img width="388" alt="SCR-20250629-kxjk" src="https://github.com/user-attachments/assets/32db7151-e679-4def-8fde-1dcf87b38d3f" />
+<img width="305" alt="SCR-20250701-pmhm" src="https://github.com/user-attachments/assets/5c30ebc6-1692-4565-9c93-7cf9296f2ecd" />
 
 ## CAD model
 I made it in Autodesk Fusion, it has a top and bottom part.
@@ -25,7 +25,7 @@ I made it in Autodesk Fusion, it has a top and bottom part.
 
 ## Schematic
 
-<img width="616" alt="SCR-20250629-sdio" src="https://github.com/user-attachments/assets/07d55637-86f1-4dec-83fd-4dbae8c2d9fc" />
+<img width="596" alt="SCR-20250701-pmlb" src="https://github.com/user-attachments/assets/a6b6c5ce-dd12-4236-b3f6-9a8840273e82" />
 
 ## BOM
 
