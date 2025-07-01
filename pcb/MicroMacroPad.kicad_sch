@@ -1418,6 +1418,126 @@
 				)
 			)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers hide)
@@ -1889,16 +2009,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 137.16) (xy 36.83 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08762cbc-b7b3-4ee0-b3a9-66a89197441a")
-	)
-	(wire
-		(pts
 			(xy 88.9 168.91) (xy 110.49 168.91)
 		)
 		(stroke
@@ -1946,6 +2056,16 @@
 			(type default)
 		)
 		(uuid "0fb902b5-9592-41d4-b85f-1a8fe1bb9e28")
+	)
+	(wire
+		(pts
+			(xy 96.52 147.32) (xy 36.83 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "111a13fb-190e-4808-a352-12493f936533")
 	)
 	(wire
 		(pts
@@ -2059,16 +2179,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 137.16) (xy 36.83 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f96f2ac-c2ee-4879-80e3-f73b3785e819")
-	)
-	(wire
-		(pts
 			(xy 68.58 144.78) (xy 88.9 144.78)
 		)
 		(stroke
@@ -2079,13 +2189,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 157.48) (xy 101.6 176.53)
+			(xy 101.6 157.48) (xy 101.6 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "326c7ba1-122e-4c7f-8b45-ea4a82d2a3e6")
+		(uuid "380c0f1b-069d-4e98-bf91-638b63db6330")
 	)
 	(wire
 		(pts
@@ -2149,13 +2259,23 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 116.84) (xy 101.6 137.16)
+			(xy 36.83 167.64) (xy 36.83 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56a83197-16d6-47f6-be9d-e8282fa48f85")
+		(uuid "4ffc1967-5a98-47cb-8a91-bef87fc1e28e")
+	)
+	(wire
+		(pts
+			(xy 96.52 137.16) (xy 96.52 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5293dda0-3244-4d7c-a814-6dc128ed7a46")
 	)
 	(wire
 		(pts
@@ -2199,6 +2319,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 167.64) (xy 36.83 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d133fe5-6e0e-4253-b12b-29c291d04b59")
+	)
+	(wire
+		(pts
 			(xy 26.67 124.46) (xy 48.26 124.46)
 		)
 		(stroke
@@ -2206,16 +2336,6 @@
 			(type default)
 		)
 		(uuid "739b35e2-e0a5-4c64-a09f-aaa2945b019b")
-	)
-	(wire
-		(pts
-			(xy 101.6 137.16) (xy 96.52 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76e1550a-0b15-4580-9ce5-361f46784cc3")
 	)
 	(wire
 		(pts
@@ -2329,16 +2449,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 176.53) (xy 96.52 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d3e008b-8e9a-42c3-8890-4c33b914acdc")
-	)
-	(wire
-		(pts
 			(xy 72.39 50.8) (xy 72.39 60.96)
 		)
 		(stroke
@@ -2376,6 +2486,16 @@
 			(type default)
 		)
 		(uuid "a6ccd741-7000-46b3-8259-bf18273ad879")
+	)
+	(wire
+		(pts
+			(xy 36.83 147.32) (xy 36.83 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7564595-841c-4c90-a9e5-5a3d33c660dc")
 	)
 	(wire
 		(pts
@@ -2589,6 +2709,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 127) (xy 40.64 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd764875-431f-4636-bacd-683abaa96a22")
+	)
+	(wire
+		(pts
 			(xy 88.9 149.86) (xy 110.49 149.86)
 		)
 		(stroke
@@ -2606,6 +2736,16 @@
 			(type default)
 		)
 		(uuid "df82f331-f54a-4002-acbb-ebb7bbcef170")
+	)
+	(wire
+		(pts
+			(xy 101.6 127) (xy 40.64 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0bb8160-b212-4180-aee1-c4e2ea1815bc")
 	)
 	(wire
 		(pts
@@ -2646,6 +2786,16 @@
 			(type default)
 		)
 		(uuid "eab229f9-a31c-4977-9d7b-b7e1e7c3d90a")
+	)
+	(wire
+		(pts
+			(xy 101.6 116.84) (xy 101.6 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaf6c17e-4cb6-411a-a5e2-37093ee793b0")
 	)
 	(wire
 		(pts
@@ -2697,7 +2847,7 @@
 		)
 		(uuid "ff48b055-de55-41f4-a71d-c6cd811296e6")
 	)
-	(global_label "row1"
+	(global_label "col2"
 		(shape input)
 		(at 55.88 21.59 90)
 		(fields_autoplaced yes)
@@ -2709,7 +2859,7 @@
 		)
 		(uuid "26d5dee0-95cd-4a82-ba8e-da2090ca6827")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.88 14.1296 90)
+			(at 55.88 14.4925 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2719,7 +2869,7 @@
 			)
 		)
 	)
-	(global_label "col3"
+	(global_label "row1"
 		(shape input)
 		(at 92.71 33.02 0)
 		(fields_autoplaced yes)
@@ -2731,7 +2881,7 @@
 		)
 		(uuid "2d3040f4-cbeb-40da-8576-8ef7977cffc4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.8075 33.02 0)
+			(at 100.1704 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2741,7 +2891,7 @@
 			)
 		)
 	)
-	(global_label "col2"
+	(global_label "row2"
 		(shape input)
 		(at 135.89 134.62 180)
 		(fields_autoplaced yes)
@@ -2753,7 +2903,7 @@
 		)
 		(uuid "4019e2d5-7c6f-4234-b134-149be9c2e644")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.7925 134.62 0)
+			(at 128.4296 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2763,7 +2913,7 @@
 			)
 		)
 	)
-	(global_label "col1"
+	(global_label "row3"
 		(shape input)
 		(at 92.71 68.58 0)
 		(fields_autoplaced yes)
@@ -2775,7 +2925,7 @@
 		)
 		(uuid "6337afed-9237-4814-80db-1ebe819808cc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.8075 68.58 0)
+			(at 100.1704 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +2935,7 @@
 			)
 		)
 	)
-	(global_label "col0"
+	(global_label "row4"
 		(shape input)
 		(at 92.71 50.8 0)
 		(fields_autoplaced yes)
@@ -2797,7 +2947,7 @@
 		)
 		(uuid "839ada30-53f8-4b50-9e93-8f2f2a39f72a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.8075 50.8 0)
+			(at 100.1704 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2873,7 +3023,7 @@
 			)
 		)
 	)
-	(global_label "row2"
+	(global_label "col3"
 		(shape input)
 		(at 72.39 21.59 90)
 		(fields_autoplaced yes)
@@ -2885,7 +3035,7 @@
 		)
 		(uuid "9c14c934-0d0d-4a5e-873c-48251deb81fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.39 14.1296 90)
+			(at 72.39 14.4925 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,7 +3045,7 @@
 			)
 		)
 	)
-	(global_label "row0"
+	(global_label "col1"
 		(shape input)
 		(at 171.45 153.67 0)
 		(fields_autoplaced yes)
@@ -2907,7 +3057,7 @@
 		)
 		(uuid "aa440a0a-f59f-41fc-afd7-475c2a3a0c94")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.9104 153.67 0)
+			(at 178.5475 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2917,7 +3067,7 @@
 			)
 		)
 	)
-	(global_label "row0"
+	(global_label "col1"
 		(shape input)
 		(at 39.37 21.59 90)
 		(fields_autoplaced yes)
@@ -2929,7 +3079,7 @@
 		)
 		(uuid "ac7d1a92-beb6-4135-89af-0ef5ac6546eb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 14.1296 90)
+			(at 39.37 14.4925 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2939,7 +3089,7 @@
 			)
 		)
 	)
-	(global_label "col2"
+	(global_label "row2"
 		(shape input)
 		(at 92.71 86.36 0)
 		(fields_autoplaced yes)
@@ -2951,7 +3101,7 @@
 		)
 		(uuid "afbf3212-66e0-47ff-88b6-00ed08af0124")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.8075 86.36 0)
+			(at 100.1704 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3005,7 +3155,7 @@
 			)
 		)
 	)
-	(global_label "col3"
+	(global_label "row3"
 		(shape input)
 		(at 135.89 138.43 180)
 		(fields_autoplaced yes)
@@ -3017,7 +3167,7 @@
 		)
 		(uuid "c79f1443-fff3-46ae-9e88-30a636b263a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.7925 138.43 0)
+			(at 128.4296 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3027,7 +3177,7 @@
 			)
 		)
 	)
-	(global_label "row1"
+	(global_label "col3"
 		(shape input)
 		(at 171.45 146.05 0)
 		(fields_autoplaced yes)
@@ -3039,7 +3189,7 @@
 		)
 		(uuid "d3dc36eb-e256-4c0e-a245-ffbf711b2a73")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.9104 146.05 0)
+			(at 178.5475 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3049,7 +3199,7 @@
 			)
 		)
 	)
-	(global_label "col0"
+	(global_label "row4"
 		(shape input)
 		(at 135.89 142.24 180)
 		(fields_autoplaced yes)
@@ -3061,7 +3211,7 @@
 		)
 		(uuid "e9d5a477-9c04-4aab-b233-fb2a485be866")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.7925 142.24 0)
+			(at 128.4296 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3071,7 +3221,7 @@
 			)
 		)
 	)
-	(global_label "col1"
+	(global_label "row1"
 		(shape input)
 		(at 135.89 130.81 180)
 		(fields_autoplaced yes)
@@ -3083,7 +3233,7 @@
 		)
 		(uuid "edd0858f-b6ee-4dba-8e84-170e2548657f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.7925 130.81 0)
+			(at 128.4296 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3093,7 +3243,7 @@
 			)
 		)
 	)
-	(global_label "row2"
+	(global_label "col2"
 		(shape input)
 		(at 171.45 149.86 0)
 		(fields_autoplaced yes)
@@ -3105,7 +3255,7 @@
 		)
 		(uuid "efefcbb1-b09e-4f77-8606-3d49c8727ea2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.9104 149.86 0)
+			(at 178.5475 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3433,7 +3583,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 49.53 144.78 0)
 			(effects
 				(font
@@ -3605,7 +3755,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 90.17 144.78 0)
 			(effects
 				(font
@@ -3643,16 +3793,16 @@
 			)
 		)
 		(pin "2"
-			(uuid "b799c295-e9b8-49cd-aacb-6afa529b2547")
+			(uuid "b799c295-e9b8-49cd-aacb-6afa529b2548")
 		)
 		(pin "4"
-			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b398")
+			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b399")
 		)
 		(pin "1"
-			(uuid "196beeab-de23-4e40-8072-470c574f404f")
+			(uuid "196beeab-de23-4e40-8072-470c574f4050")
 		)
 		(pin "3"
-			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e2")
+			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e3")
 		)
 		(instances
 			(project ""
@@ -3689,7 +3839,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 49.53 184.15 0)
 			(effects
 				(font
@@ -3742,73 +3892,6 @@
 			(project ""
 				(path "/25dbeb3f-ebc0-4c5b-9ddf-40ddb6f09aad"
 					(reference "D24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 147.32 104.14 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36e0a0e9-e3d2-462b-b817-69245acf0a0b")
-		(property "Reference" "#PWR3"
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 151.13 104.1399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 147.32 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5fa02b1c-d7be-4cfa-9094-f8e3d115fcff")
-		)
-		(instances
-			(project ""
-				(path "/25dbeb3f-ebc0-4c5b-9ddf-40ddb6f09aad"
-					(reference "#PWR3")
 					(unit 1)
 				)
 			)
@@ -3996,7 +4079,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:SSD1306-0.91-OLED-4pin-128x32"
+		(property "Footprint" "footprints:SSD1306-0.91-OLED-4pin-128x32"
 			(at 142.24 104.14 0)
 			(effects
 				(font
@@ -4185,10 +4268,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "31b45774-1d47-410a-8571-d23560e5f97f")
+			(uuid "31b45774-1d47-410a-8571-d23560e5f980")
 		)
 		(pin "2"
-			(uuid "6c0b9bd9-17f8-4343-9958-73d0233d4eea")
+			(uuid "6c0b9bd9-17f8-4343-9958-73d0233d4eeb")
 		)
 		(instances
 			(project ""
@@ -4225,7 +4308,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 69.85 124.46 0)
 			(effects
 				(font
@@ -4263,16 +4346,16 @@
 			)
 		)
 		(pin "2"
-			(uuid "b799c295-e9b8-49cd-aacb-6afa529b2547")
+			(uuid "b799c295-e9b8-49cd-aacb-6afa529b2549")
 		)
 		(pin "4"
-			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b398")
+			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b39a")
 		)
 		(pin "1"
-			(uuid "196beeab-de23-4e40-8072-470c574f404f")
+			(uuid "196beeab-de23-4e40-8072-470c574f4051")
 		)
 		(pin "3"
-			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e2")
+			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e4")
 		)
 		(instances
 			(project ""
@@ -4425,15 +4508,82 @@
 			)
 		)
 		(pin "2"
-			(uuid "c84de583-085b-41f9-8154-817d65f71821")
+			(uuid "c84de583-085b-41f9-8154-817d65f71822")
 		)
 		(pin "1"
-			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c3f")
+			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c40")
 		)
 		(instances
 			(project ""
 				(path "/25dbeb3f-ebc0-4c5b-9ddf-40ddb6f09aad"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 147.32 104.14 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e09bede-14d4-484c-8d90-1718e913bacb")
+		(property "Reference" "#PWR3"
+			(at 143.51 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 151.13 104.1399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 147.32 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ec344b7-b1de-4585-ac35-5cdbb4b6b720")
+		)
+		(instances
+			(project ""
+				(path "/25dbeb3f-ebc0-4c5b-9ddf-40ddb6f09aad"
+					(reference "#PWR3")
 					(unit 1)
 				)
 			)
@@ -4512,10 +4662,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "c84de583-085b-41f9-8154-817d65f71821")
+			(uuid "c84de583-085b-41f9-8154-817d65f71823")
 		)
 		(pin "1"
-			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c3f")
+			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c41")
 		)
 		(instances
 			(project ""
@@ -4552,7 +4702,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 69.85 184.15 0)
 			(effects
 				(font
@@ -4590,16 +4740,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "edef79f8-3416-465b-ab48-69f607b609e8")
+			(uuid "edef79f8-3416-465b-ab48-69f607b609e9")
 		)
 		(pin "1"
-			(uuid "7136547a-6ee4-42a2-a349-33f5d7345110")
+			(uuid "7136547a-6ee4-42a2-a349-33f5d7345111")
 		)
 		(pin "4"
-			(uuid "05eb595c-5416-4c7f-a25a-bbdb6db61124")
+			(uuid "05eb595c-5416-4c7f-a25a-bbdb6db61125")
 		)
 		(pin "2"
-			(uuid "396eb9a1-6cbd-42d6-af3b-7958e56ee339")
+			(uuid "396eb9a1-6cbd-42d6-af3b-7958e56ee33a")
 		)
 		(instances
 			(project ""
@@ -4704,7 +4854,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 69.85 165.1 0)
 			(effects
 				(font
@@ -4742,16 +4892,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "edef79f8-3416-465b-ab48-69f607b609e8")
+			(uuid "edef79f8-3416-465b-ab48-69f607b609ea")
 		)
 		(pin "1"
-			(uuid "7136547a-6ee4-42a2-a349-33f5d7345110")
+			(uuid "7136547a-6ee4-42a2-a349-33f5d7345112")
 		)
 		(pin "4"
-			(uuid "05eb595c-5416-4c7f-a25a-bbdb6db61124")
+			(uuid "05eb595c-5416-4c7f-a25a-bbdb6db61126")
 		)
 		(pin "2"
-			(uuid "396eb9a1-6cbd-42d6-af3b-7958e56ee339")
+			(uuid "396eb9a1-6cbd-42d6-af3b-7958e56ee33b")
 		)
 		(instances
 			(project ""
@@ -4788,7 +4938,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:XIAO-RP2040-DIP"
+		(property "Footprint" "footprints:XIAO-RP2040-DIP"
 			(at 154.178 157.988 0)
 			(effects
 				(font
@@ -4960,7 +5110,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 69.85 144.78 0)
 			(effects
 				(font
@@ -4998,16 +5148,16 @@
 			)
 		)
 		(pin "2"
-			(uuid "b799c295-e9b8-49cd-aacb-6afa529b2547")
+			(uuid "b799c295-e9b8-49cd-aacb-6afa529b254a")
 		)
 		(pin "4"
-			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b398")
+			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b39b")
 		)
 		(pin "1"
-			(uuid "196beeab-de23-4e40-8072-470c574f404f")
+			(uuid "196beeab-de23-4e40-8072-470c574f4052")
 		)
 		(pin "3"
-			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e2")
+			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e5")
 		)
 		(instances
 			(project ""
@@ -5092,10 +5242,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "31b45774-1d47-410a-8571-d23560e5f97f")
+			(uuid "31b45774-1d47-410a-8571-d23560e5f981")
 		)
 		(pin "2"
-			(uuid "6c0b9bd9-17f8-4343-9958-73d0233d4eea")
+			(uuid "6c0b9bd9-17f8-4343-9958-73d0233d4eec")
 		)
 		(instances
 			(project ""
@@ -5200,7 +5350,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 90.17 184.15 0)
 			(effects
 				(font
@@ -5238,16 +5388,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "edef79f8-3416-465b-ab48-69f607b609e8")
+			(uuid "edef79f8-3416-465b-ab48-69f607b609eb")
 		)
 		(pin "1"
-			(uuid "7136547a-6ee4-42a2-a349-33f5d7345110")
+			(uuid "7136547a-6ee4-42a2-a349-33f5d7345113")
 		)
 		(pin "4"
-			(uuid "05eb595c-5416-4c7f-a25a-bbdb6db61124")
+			(uuid "05eb595c-5416-4c7f-a25a-bbdb6db61127")
 		)
 		(pin "2"
-			(uuid "396eb9a1-6cbd-42d6-af3b-7958e56ee339")
+			(uuid "396eb9a1-6cbd-42d6-af3b-7958e56ee33c")
 		)
 		(instances
 			(project ""
@@ -5284,7 +5434,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 90.17 124.46 0)
 			(effects
 				(font
@@ -5322,16 +5472,16 @@
 			)
 		)
 		(pin "2"
-			(uuid "b799c295-e9b8-49cd-aacb-6afa529b2547")
+			(uuid "b799c295-e9b8-49cd-aacb-6afa529b254b")
 		)
 		(pin "4"
-			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b398")
+			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b39c")
 		)
 		(pin "1"
-			(uuid "196beeab-de23-4e40-8072-470c574f404f")
+			(uuid "196beeab-de23-4e40-8072-470c574f4053")
 		)
 		(pin "3"
-			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e2")
+			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e6")
 		)
 		(instances
 			(project ""
@@ -5416,10 +5566,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "c84de583-085b-41f9-8154-817d65f71821")
+			(uuid "c84de583-085b-41f9-8154-817d65f71824")
 		)
 		(pin "1"
-			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c3f")
+			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c42")
 		)
 		(instances
 			(project ""
@@ -5456,7 +5606,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 49.53 124.46 0)
 			(effects
 				(font
@@ -5494,16 +5644,16 @@
 			)
 		)
 		(pin "2"
-			(uuid "b799c295-e9b8-49cd-aacb-6afa529b2547")
+			(uuid "b799c295-e9b8-49cd-aacb-6afa529b254c")
 		)
 		(pin "4"
-			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b398")
+			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b39d")
 		)
 		(pin "1"
-			(uuid "196beeab-de23-4e40-8072-470c574f404f")
+			(uuid "196beeab-de23-4e40-8072-470c574f4054")
 		)
 		(pin "3"
-			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e2")
+			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e7")
 		)
 		(instances
 			(project ""
@@ -5576,6 +5726,73 @@
 			(project ""
 				(path "/25dbeb3f-ebc0-4c5b-9ddf-40ddb6f09aad"
 					(reference "#PWR2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 171.45 138.43 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c539524-b013-4746-815f-a2fe39e71a0a")
+		(property "Reference" "#PWR7"
+			(at 167.64 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 175.26 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 171.45 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ec344b7-b1de-4585-ac35-5cdbb4b6b720")
+		)
+		(instances
+			(project ""
+				(path "/25dbeb3f-ebc0-4c5b-9ddf-40ddb6f09aad"
+					(reference "#PWR7")
 					(unit 1)
 				)
 			)
@@ -5790,10 +6007,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "c84de583-085b-41f9-8154-817d65f71821")
+			(uuid "c84de583-085b-41f9-8154-817d65f71825")
 		)
 		(pin "1"
-			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c3f")
+			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c43")
 		)
 		(instances
 			(project ""
@@ -6080,10 +6297,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "31b45774-1d47-410a-8571-d23560e5f97f")
+			(uuid "31b45774-1d47-410a-8571-d23560e5f982")
 		)
 		(pin "2"
-			(uuid "6c0b9bd9-17f8-4343-9958-73d0233d4eea")
+			(uuid "6c0b9bd9-17f8-4343-9958-73d0233d4eed")
 		)
 		(instances
 			(project ""
@@ -6236,10 +6453,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "c84de583-085b-41f9-8154-817d65f71821")
+			(uuid "c84de583-085b-41f9-8154-817d65f71826")
 		)
 		(pin "1"
-			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c3f")
+			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c44")
 		)
 		(instances
 			(project ""
@@ -6276,7 +6493,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 90.17 165.1 0)
 			(effects
 				(font
@@ -6314,16 +6531,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "edef79f8-3416-465b-ab48-69f607b609e8")
+			(uuid "edef79f8-3416-465b-ab48-69f607b609ec")
 		)
 		(pin "1"
-			(uuid "7136547a-6ee4-42a2-a349-33f5d7345110")
+			(uuid "7136547a-6ee4-42a2-a349-33f5d7345114")
 		)
 		(pin "4"
-			(uuid "05eb595c-5416-4c7f-a25a-bbdb6db61124")
+			(uuid "05eb595c-5416-4c7f-a25a-bbdb6db61128")
 		)
 		(pin "2"
-			(uuid "396eb9a1-6cbd-42d6-af3b-7958e56ee339")
+			(uuid "396eb9a1-6cbd-42d6-af3b-7958e56ee33d")
 		)
 		(instances
 			(project ""
@@ -6408,10 +6625,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "c84de583-085b-41f9-8154-817d65f71821")
+			(uuid "c84de583-085b-41f9-8154-817d65f71827")
 		)
 		(pin "1"
-			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c3f")
+			(uuid "a0b060af-9a5c-489c-8a55-506ad1e53c45")
 		)
 		(instances
 			(project ""
@@ -6496,10 +6713,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "31b45774-1d47-410a-8571-d23560e5f97f")
+			(uuid "31b45774-1d47-410a-8571-d23560e5f983")
 		)
 		(pin "2"
-			(uuid "6c0b9bd9-17f8-4343-9958-73d0233d4eea")
+			(uuid "6c0b9bd9-17f8-4343-9958-73d0233d4eee")
 		)
 		(instances
 			(project ""
@@ -6536,7 +6753,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-footprint:LED_SK6812MINI"
+		(property "Footprint" "footprints:LED_SK6812MINI"
 			(at 49.53 165.1 0)
 			(effects
 				(font
@@ -6574,16 +6791,16 @@
 			)
 		)
 		(pin "2"
-			(uuid "b799c295-e9b8-49cd-aacb-6afa529b2547")
+			(uuid "b799c295-e9b8-49cd-aacb-6afa529b254d")
 		)
 		(pin "4"
-			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b398")
+			(uuid "07fa8b3d-266f-4e00-9995-2e9b9933b39e")
 		)
 		(pin "1"
-			(uuid "196beeab-de23-4e40-8072-470c574f404f")
+			(uuid "196beeab-de23-4e40-8072-470c574f4055")
 		)
 		(pin "3"
-			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e2")
+			(uuid "c5d73eff-16f5-4105-90a2-fc7896bda5e8")
 		)
 		(instances
 			(project ""
